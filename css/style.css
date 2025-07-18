@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Koulen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Battambang", sans-serif;
+    background-color: #f6f6f6;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -10px;
+}
+
+.col-12 {
+    padding-inline: 10px;
+    width: 100%;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding-inline: 10px;
+}
+
+.col-8 {
+    padding-inline: 10px;
+    width: 66.66%;
+}
+
+/* ======================header===================== */
+header {
+    background-color: #000;
+    padding: 20px;
+}
+
+header .brand {
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: #FA1939;
+    font-family: "Koulen", sans-serif;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 18px 17px;
+    color: #e5e5e5;
+    display: block;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+
+}
+
+.navbar .navbar-nav .nav-item .nav-link i {
+    font-size: 18px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    background-color: #D90C16;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: white;
+}
+
+/* ===================sabay-area================ */
+.sabay-area {
+    padding: 20px 0;
+}
+
+.sabay-area .news {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sabay-area .news .technology {
+    width: 60%;
+    height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 20px;
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sabay-area .news .technology::after {
+    content: "បច្ចេកវិទ្យា";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: blue;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sabay-area .news .technology .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+    height: 100%;
+    background-color: #00000058;
+}
+
+.sabay-area .news .technology .text {
+    position: relative;
+    z-index: 1;
+}
+
+.sabay-area .news .technology .overflow {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sabay-area .news .technology .overflow p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.sabay-area .news .technology .overflow span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sabay-area .news .technology div>span {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.sabay-area .news .technology:hover .overflow {
+    height: 110px;
+}
+
+.sabay-area .news .technology:hover p {
+    color: #D90C16;
+    font-weight: bold;
+}
+
+.sabay-area .news .technology:hover .overlay {
+    background-color: #000000b0;
+}
+
+.sabay-area .news .sport {
+    width: 40%;
+    height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 20px;
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ===================== */
+.sabay-area .news .life {
+    width: 60%;
+    height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 20px;
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.sabay-area .news .life::after {
+    content: "ជីវិតនិងសង្គម";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sabay-area .news .life .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+    height: 100%;
+    background-color: #00000058;
+}
+
+.sabay-area .news .life .text {
+    position: relative;
+    z-index: 1;
+}
+
+.sabay-area .news .life .overflow {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sabay-area .news .life .overflow p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.sabay-area .news .life .overflow span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sabay-area .news .life div>span {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.sabay-area .news .life:hover .overflow {
+    height: 110px;
+}
+
+.sabay-area .news .life:hover p {
+    color: #D90C16;
+    font-weight: bold;
+}
+
+.sabay-area .news .life:hover .overlay {
+    background-color: #000000b0;
+}
+
+.sabay-area .news .sport {
+    width: 40%;
+    height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 20px;
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ====================== */
+
+
+.sabay-area .news .society {
+    width: 40%;
+    height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 20px;
+    background-image: url(../img/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.sabay-area .news .society::after {
+    content: "ជីវិតនិងសង្គម";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sabay-area .news .society .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+    height: 100%;
+    background-color: #00000058;
+}
+
+.sabay-area .news .society .text {
+    position: relative;
+    z-index: 1;
+}
+
+.sabay-area .news .society .overflow {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sabay-area .news .society .overflow p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.sabay-area .news .society .overflow span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sabay-area .news .society div>span {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.sabay-area .news .society:hover .overflow {
+    height: 140px;
+}
+
+.sabay-area .news .society:hover p {
+    color: #D90C16;
+    font-weight: bold;
+}
+
+.sabay-area .news .society:hover .overlay {
+    background-color: #000000b0;
+}
+
+.sabay-area .news .sport {
+    width: 40%;
+    height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 20px;
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.sabay-area .news .sport::after {
+    content: "កីឡា";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: orange;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sabay-area .news .sport .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+    height: 100%;
+    background-color: #00000058;
+}
+
+.sabay-area .news .sport .text {
+    position: relative;
+    z-index: 1;
+}
+
+.sabay-area .news .sport .overflow {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sabay-area .news .sport .overflow p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.sabay-area .news .sport .overflow span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sabay-area .news .sport div>span {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.sabay-area .news .sport:hover .overflow {
+    height: 110px;
+}
+
+.sabay-area .news .sport:hover p {
+    color: #D90C16;
+    font-weight: bold;
+}
+
+.sabay-area .news .sport:hover .overlay {
+    background-color: #000000b0;
+}
+
+.sabay-area .box-bler {
+    height: 270px;
+    background-color: #DDDDDD;
+    padding-block: 5px;
+    margin-bottom: 20px;
+}
+
+/* ============================ */
+
+.sabay-new {
+    padding: 20px 0;
+    position: relative;
+}
+
+.sabay-new h3 {
+    background-color: #4390F8;
+    display: inline-block;
+    padding: 5px 25px;
+    color: white;
+    position: relative;
+    font-family: "Koulen", sans-serif;
+}
+
+.sabay-new h3::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 100%;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 0 25px;
+    border-color: transparent transparent transparent #4390F8;
+}
+
+.sabay-new h3 i {
+    margin-left: 10px;
+    font-size: 34px;
+    font-weight: 400;
+    transform: translateY(5px);
+    font-family: "Koulen", sans-serif;
+}
+
+.sabay-new .content {
+    height: 400px;
+    border-top: 3px solid #4390F8;
+    background-color: white;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
